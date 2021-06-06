@@ -60,22 +60,18 @@ public class App {
         System.out.println(people + " people with " + pizza + " pizzas (" +slices + " slices)");
     }
 
-    //slices per person calc
     public int slicesPerPersonCalc(int people, int totalSlices) {
         return totalSlices/people;
     }
 
-    //leftover pieces calc
     public int leftoverPiecesCalc(int totalSlices, int slicesPerPerson, int people) {
         return totalSlices - (slicesPerPerson * people);
     }
 
-    //slices per person output
     public void slicesPerPersonOutput(int slicesPerPerson) {
         System.out.println("Each person gets " + slicesPerPerson + " pieces of pizza.");
     }
 
-    //leftover output
     public void leftoverPiecesOutput(int leftoverPieces) {
         System.out.println("There are " + leftoverPieces + " leftover pieces.");
     }
